@@ -19,7 +19,11 @@ public class Search_Product {
 		Thread.sleep(3000);
 		WebElement secondsofa= driver.findElement(By.xpath("(//a[@class='MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineHover mui-8ujno3'])[2]"));
 		secondsofa.click();
+		((JavascriptExecutor)driver).executeScript("scroll(0,300)");
 		
+		WebElement addtocartbt= driver.findElement(By.xpath("//input[@id='add-to-cart-btn']"));
+		
+		addtocartbt.click();
 		
 		
 
